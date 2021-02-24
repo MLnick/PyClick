@@ -7,7 +7,7 @@ from __future__ import division, print_function
 from abc import abstractmethod
 #from sklearn.metrics import roc_auc_score
 #from scipy.stats import pearsonr
-#import numpy as np
+import numpy as np
 import math
 import collections
 import sys
