@@ -76,7 +76,7 @@ class Perplexity(Evaluation):
         for session in search_sessions:
             click_probs = click_model.get_full_click_probs(session)
 
-            for rank, click_prob in enumerate(click_probs):
+            for rank, click_prob in enumerate(click_probs[:RANK_MAX]):
                 if session.web_results[rank].click:
                     p = click_prob
                 else:
